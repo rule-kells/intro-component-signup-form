@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/styles.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+</head>
+
+<body>
+
+  <div class="bg">
+    <main class="container grid">
+      <section class="hero__content">
+        <h1 class="title">Learn to code by watching others</h1>
+        <p class="body">
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.
+        </p>
+
+      </section>
+
+      <div class="trial__content">
+        <button class="btn"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+        <form action="" id="form" class="form">
+          <div>
+            <label for="first-name" aria-placeholder="First Name"></label>
+            <input type="text" name="first-name" id="first-name" placeholder="First Name" class="first-name" required>
+            <p class="error-msg-hidden">First Name cannot be empty</p>
+          </div>
+          <div>
+            <label for="last-name" aria-placeholder="Last Name"></label>
+            <input type="text" name="last-name" id="last-name" placeholder="Last Name" class="last-name" required>
+            <p class="error-msg-hidden">last name cannot be empty</p>
+          </div>
+          <div>
+            <label for="email" aria-placeholder="Email Address"></label>
+            <input type="email" name="email" id="email" placeholder="Email Address" class="email" required>
+            <p class="error-msg-hidden">Looks like this is not an email</p>
+          </div>
+          <div>
+            <label for="password" aria-placeholder="Password"></label>
+            <input type="password" name="password" id="password" placeholder="Password" class="password" required>
+            <p class="error-msg-hidden">Password cannot be empty</p>
+          </div>
+          <input type="submit" class="submit" value="Claim your free trial">
+          <p class="terms">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Kellen Ruyle</a>.
+      </p>
+    </footer>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
